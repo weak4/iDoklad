@@ -33,6 +33,7 @@ Of course replace **\*\*INSERT_YOUR_CLIENT_ID\*\*** and **\*\*INSERT_YOUR_CLIENT
 
 - [Getting List of Invoices](#getting-list-of-invoices)
 - [Getting the Default Invoice](#getting-default-invoice)
+- [Creating Invoice](#creating-invoice)
 
 ### Getting List of Invoices
 
@@ -45,6 +46,15 @@ It returns the list of all issued invoices:
 Returns an empty invoice with initial values according to the agenda settings. Good for issuing new invoice.
 
     @result = Idoklad::IssuedInvoices.get_default
+
+### Creating Invoice
+
+Creates a new invoice and returns whole response:
+
+    invoice = Idoklad::IssuedInvoices.get_default
+    # update invoice here...
+    # invoice["Name"] = ..
+    response = Idoklad::IssuedInvoices.create invoice
 
 ## Contribution
 
