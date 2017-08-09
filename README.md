@@ -44,7 +44,7 @@ It returns the list of all issued invoices:
 
 Returns an empty invoice with initial values according to the agenda settings. Good for issuing new invoice.
 
-    @result = Idoklad::IssuedInvoices.get_list
+    @result = Idoklad::IssuedInvoices.get_default
 
 ## Contribution
 
