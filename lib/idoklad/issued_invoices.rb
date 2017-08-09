@@ -11,4 +11,9 @@ class Idoklad::IssuedInvoices
     return JSON.parse response.body
   end
 
+  def self.create(invoice)
+    response = Idoklad::ApiRequest.post '/developer/api/v2/IssuedInvoices', invoice
+    return JSON.parse response.body
+  end
+
 end
