@@ -19,3 +19,4 @@ end
 require 'idoklad/issued_invoices'
 require 'idoklad/auth'
 require 'idoklad/api_request'
+require 'idoklad/countries'
