@@ -16,4 +16,9 @@ class Idoklad::IssuedInvoices
     return JSON.parse response.body
   end
 
+  def self.get_pdf(invoice_id)
+    response = Idoklad::ApiRequest.get "/developer/api/v2/IssuedInvoices/#{invoice_id}/GetPdf"
+    return response.body
+  end
+
 end
