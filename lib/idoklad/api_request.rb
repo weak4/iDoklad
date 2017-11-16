@@ -3,7 +3,7 @@ require 'json'
 module Idoklad::ApiRequest
 
   def self.get(path)
-    @token ||= Idoklad::Auth.get_token
+    @token = Idoklad::Auth.get_token
 
     uri = URI.parse("#{Idoklad::API_URL}#{path}")
     http = Net::HTTP.new(uri.host, uri.port)
@@ -12,7 +12,7 @@ module Idoklad::ApiRequest
   end
 
   def self.post(path, object)
-    @token ||= Idoklad::Auth.get_token
+    @token = Idoklad::Auth.get_token
 
     uri = URI.parse("#{Idoklad::API_URL}#{path}")
     http = Net::HTTP.new(uri.host, uri.port)

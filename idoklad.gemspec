@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'idoklad'
-  s.version     = '0.0.7'
+  s.version     = '0.0.8'
   s.date        = '2017-08-24'
   s.summary     = "iDoklad"
   s.description = "A ruby gem for iDoklad.cz api."
